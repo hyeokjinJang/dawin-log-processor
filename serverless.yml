@@ -1,0 +1,21 @@
+service: dawin-log-processor
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+package:
+  individually: true
+
+custom:
+  webpack:
+    packager: yarn
+
+provider:
+  name: aws
+  region: ap-northeast-2
+  runtime: nodejs14.x
+
+functions:
+  myFunction:
+    handler: src/app.handler 
