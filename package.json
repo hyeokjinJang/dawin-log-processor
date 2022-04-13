@@ -8,6 +8,7 @@
     "start": "sls offline"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.93",
     "eslint": "^8.12.0",
     "serverless": "^3.11.0",
     "serverless-offline": "^8.5.0",
@@ -18,7 +19,11 @@
   },
   "dependencies": {
     "@dawinproperty/dawin-configuration": "^0.0.14",
-    "@elastic/elasticsearch": "^8.1.0",
-    "mongoose": "^6.2.10"
+    "@elastic/elasticsearch": "7.11",
+    "dayjs": "^1.11.0",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.2.10",
+    "node-cron": "^3.0.0",
+    "typedi": "^0.10.0"
   }
 }
